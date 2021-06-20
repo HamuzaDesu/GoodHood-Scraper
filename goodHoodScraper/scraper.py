@@ -13,24 +13,6 @@ with open('goodHoodScraper\config.json', 'r') as f:
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 
-def getSize():
-    # put all the sizen in ehre or write code to dynamically get all teh sizes from the website
-    availableSizes = ['7', '7.5', '8', '8.5', '9', '9.5', '10', '10.5', '11']
-
-    while True:
-        try:
-            userSize = input("Choose a size between 7 and 11: ")
-            if userSize in availableSizes:
-                break
-            else: raise ValueError
-        except ValueError:
-            print("try again")
-            continue
-
-    size = f'UK{userSize}'
-
-    return size
-
 def scrapeSite(profile, link, size):
     driver = webdriver.Chrome(PATH)
 
