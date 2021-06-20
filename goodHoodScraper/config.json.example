@@ -1,0 +1,12 @@
+{
+    "profileOne": {
+        "username": "username",
+        "password": "password",
+        "CVC": "123"
+    },
+    "profileTwo": {
+        "username": "username",
+        "password": "password",
+        "CVC": "123"
+    }
+}
